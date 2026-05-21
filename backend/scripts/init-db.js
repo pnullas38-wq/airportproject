@@ -172,10 +172,9 @@ async function init() {
     console.log('Seeding sample data...');
 
     // Users
-    const hashedPassword = await bcrypt.hash('admin123', 10);
     await User.create({
       username: 'admin',
-      password: hashedPassword,
+      password: 'admin123',
       role: 'admin'
     });
     console.log('Seeded User: admin / admin123');
