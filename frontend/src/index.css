@@ -1,15 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  body {
-    @apply bg-slate-50 text-slate-900 transition-colors duration-200;
-  }
-  
-  body.dark {
-    @apply bg-slate-950 text-slate-50;
-  }
+@theme {
+  --color-brand-50: #f0f7ff;
+  --color-brand-100: #e0effe;
+  --color-brand-200: #bbdffd;
+  --color-brand-300: #7cc2fc;
+  --color-brand-400: #389ffa;
+  --color-brand-500: #0e7ff4;
+  --color-brand-600: #0261d7;
+  --color-brand-700: #034da9;
+  --color-brand-800: #07428b;
+  --color-brand-900: #0c3872;
+  --color-brand-950: #08234a;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 transition-colors duration-200;
+}
+
+body.dark {
+  @apply bg-slate-950 text-slate-50;
 }
 
 /* Glassmorphism utility */
